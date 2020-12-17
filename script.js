@@ -16,11 +16,11 @@ hour.addClass("hour col-1");
 row.append(hour);
 
 var textArea = $("textarea");
-textArea.addClass("past description col-10");
+textArea.addClass("past description col-lg-8");
 row.append(textArea);
 
 var button = $("button");
-button.zddClass("saveBtn col-1");
+button.addClass("saveBtn col-1");
 row.append(button);
 
 $(".container").append(row);
