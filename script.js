@@ -11,7 +11,8 @@ var currentTime = moment().format("Hmm");
 console.log(currentTime);
 if(parseInt(timeOfDay[0]) < parseInt(currentTime)){
     console.log("This time is in the past");
-    else()
+    else(timeOfDay[0]) !=== parseInt(currentTime)
+    console.log("This time is in the future");
 }
 //create an element 
 var row = $("<div>");
