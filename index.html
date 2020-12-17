@@ -29,16 +29,46 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <<!-- Timeblocks go here -->
+      <div id="time block"></div>
+      <div>
+        <!-- <!-- <button class="time-of-day" data-hour="9 am">9 am</button> -->
+          <button id="row" hour="10 am">10 am</button>
+          <button id="row" hour="11 am">11 am</button>
+          <button id="row" hour="12 am">12 am</button>
+          <button id="row" hour="13 am">13 am</button>
+          <button id="row" hour="14 am">14 am</button>
+          <button id="row" hour="15 am">15 am</button>
+          <button id="row" hour="16 am">16 am</button>
+          <button id="row" hour="17 am">17 am</button> -->
+        
+      </div>
+          
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
+    <!-- <script>
         var arrayOfHours = ["09", "10", "11", "12", "13", "14", "15", "16", "17"]
-    </script>
+    </script> -->
   </body>
 </html>
 
 
-//Create an array of hours 
+<!-- //Create blocks of time 
+    color code blocks of time using javascript, specifically jQuery
+        >past hours greyed out
+        >current hour orange 
+        >future hours green
+    Using the three step process:
+    //Create an array of hours 
+    loop over the array and add classes w/some attr
+    append to existing div 
+    Save the input inside of the blocks by clicking the save icon; 
+    upon refresh the items are still saved by using local storage
+    How do I know what time it is?
+    >Use resource moment.js; time is in military time 
+    once time is computed add a class to an element 
+
+/
+
