@@ -29,6 +29,22 @@ for (var i=0; i < timeOfDay.length; i++){
     row.append(button);
     
     $(".container").append(row);
+
+    if(parseInt(timeOfDay[i]) === currentTime){
+        // console.log("present");
+        textArea.addClass("present");
+        console.log(timeOfDay[i]);
+    }
+    else if(parseInt(timeOfDay[i]) < currentTime){
+        // console.log("past");
+        textArea.addClass("past");
+    }
+    else {
+        // console.log("future");
+        textArea.addClass("future");
+    }
+
 }
+
 
 
