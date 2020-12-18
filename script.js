@@ -44,7 +44,15 @@ for (var i=0; i < timeOfDay.length; i++){
         textArea.addClass("future");
     }
 
+
 }
 
+
+$(".saveBtn").click(function(){
+    // console.log(".textArea");
+    var dailyTask = $("<button>");
+    localStorage.setItem('<button>', button);
+    
+}) 
 
 
