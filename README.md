@@ -1,104 +1,59 @@
-# daily-planner
+# Daily Planner
+The purpose of this project was to create a calendar application that allows its users to save events for each hour of the day. The hours of the day will update by the hour that has passed highlighting as grey, the current hour red, and the hour to come in green. The user can input their task for a specific hour for it to be saved until they delete it. 
 
-# 05 Third-Party APIs: Work Day Scheduler
+-Jquery was used to manipulate the DOM and to create the variables needed to notate the date, hours and specific time of day. 
 
-## Your Task
+-A for loop was incorporated to cycle through the times of day and notate the current hour. 
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+-Moment.js was used to detect the exact time. 
 
-You'll need to use a library like [Moment.js](https://momentjs.com/) to work with dates and times. `Moment.js` has historically been the most popular date/time library but is no longer supported by its developers. However, you can still use it for this project, or you can look into one of the following alternatives:
+-Local storage was used to ensure the user's input would be stored when the application is refreshed in the browser. 
 
-  * [Luxon](https://moment.github.io/luxon/)
+ # Installation
 
-  * [Day.js](https://day.js.org/)
+To run this locally, fork the repo, clone it, and open the 'index.html' in your default browser.  
 
-  * [date-fns](https://date-fns.org/)
+## Usage
 
-  * [js-Joda](https://js-joda.github.io/js-joda/)
+This application should be deployed within a browser. Enter in the task to be completed and select the file icon to save the task for that hour. 
 
-Whichever library you choose, be sure to read the documentation carefully!
+### Credits
 
+* Used Bootstrap's grid system, (containers, rows, and columns).
 
-## User Story
+* Library Moment.js dat/time library 
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+* 02-ask-the-class
 
+* Study Groups 
 
-## Acceptance Criteria
+* code.jquery.com  
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+### Moc-Up
 
+![Day Planner](Planner.PNG)
 
-## Mock-Up
+### License 
 
-The following animation demonstrates the application functionality:
+Copyright (c) [2020] [Selena Singleton]
 
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses the Moment.js library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
-## Review
 
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
