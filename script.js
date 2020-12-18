@@ -47,11 +47,14 @@ for (var i=0; i < timeOfDay.length; i++){
 
 }
 
+localStorage.getItem('button');
 
 $(".saveBtn").click(function(){
     // console.log(".textArea");
     var dailyTask = $("<button>");
-    localStorage.setItem('<button>', button);
+    var text = document.getElementsByClassName("past description col-lg-8")
+    console.log(text[0].value);
+    localStorage.setItem('button', text[0].value);
     
 }) 
 
